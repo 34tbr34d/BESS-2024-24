@@ -18,8 +18,8 @@ Sources: https://idecyl.jcyl.es/enre/, https://datos.gob.es/es/catalogo?q=castil
   - Area by crop and province - single application - https://datos.gob.es/es/catalogo/a07002862-superficie-por-cultivo-y-provincia-solicitud-unica 
 
 **Water** 
-  - Hidrografía de Castilla y León: cursos fluviales (download SHP) - https://datos.gob.es/es/catalogo/a07002862-hidrografia-de-castilla-y-leon-cursos-fluviales
-  - Hidrografía de Castilla y León: masas de agua (download SHP) - https://datos.gob.es/es/catalogo/a07002862-hidrografia-de-castilla-y-leon-masas-de-agua 
+  - Hidrografía de Castilla y León: cursos fluviales (download SHP) - https://datos.gob.es/es/catalogo/a07002862-hidrografia-de-castilla-y-leon-cursos-fluviales => License -  https://www.jcyl.es/licencia-IGCYL-NC 
+  - Hidrografía de Castilla y León: masas de agua (download SHP) - https://datos.gob.es/es/catalogo/a07002862-hidrografia-de-castilla-y-leon-masas-de-agua => Resolution - 1:25,000
   - Irrigable areas - Information and download **unavailable**
   
 
@@ -28,5 +28,3 @@ Sources: https://idecyl.jcyl.es/enre/, https://datos.gob.es/es/catalogo?q=castil
 - CyL population: density/1km mesh (2011 Census) - https://idecyl.jcyl.es/geonetwork/srv/spa/catalog.search#/metadata/SPAGOBCYLCITDTSPDPDR
 - Register of Inhabitants 2022 - Information and download **unavailable**
 
-**Predator Distribution**
-- 
