@@ -8,3 +8,7 @@
 ```processing.run("native:dissolve", {'INPUT':'C:/Users/localuser/Documents/GIS data/solarpanelsseogiva.gpkg|layername=solarpanelssegovia','FIELD':[],'SEPARATE_DISJOINT':False,'OUTPUT':'TEMPORARY_OUTPUT'})```
 
 ==> manualy made permanent with the name: `solar_exclusion_segovia_dissolve.gpkg`
+
+
+
+Layers opened:
