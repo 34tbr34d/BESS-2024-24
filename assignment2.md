@@ -44,7 +44,6 @@ Layers opened:
 - Looking for: Hydrology courses in Segovia province
 - Process(s): Clipping hydrology to Segovia
 
-
 ```processing.run("native:clip", {'INPUT':'C:/Users/localuser/Documents/GIS data/hy.hidro_cyl_cursos/hy.hidro_cyl_cursos.shp','OVERLAY':'sego_limit.gpkg|layername=sg_province__prov_cyl_recintos','OUTPUT':'TEMPORARY_OUTPUT'})```
 
 
