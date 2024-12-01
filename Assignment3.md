@@ -16,6 +16,10 @@
 ### Vegetation type
 #### jnj
 
+
+## Steps Taken
+1. 
+
 # **Second Spatial Analysis**
 **Objective:** Identify areas in Segovia, Spain that have a high risk in terms of vole populations, focusing towards agricultural zones that are vulnerable to economic loss (due to crop damage), and regions with high erosion potential where soil degredation can amplify environmental and economic impacts. 
 
@@ -33,3 +37,9 @@
 
 
 ### Land Cover
+  #### Esri | Sentinel-2 Land Cover Explorer (.tif file) - https://livingatlas.arcgis.com/landcoverexplorer/#mapCenter=-5.12978%2C40.99605%2C5.9632000000000005&mode=step&timeExtent=2017%2C2021&renderingRule=0&year=2022
+#### - Dataset is available under a Creative Commons by Attribution license
+#### - The data is the result of a collaboration between Esri and Impact Observatory
+#### - Cell size is 10 meters
+
+## Steps Taken
