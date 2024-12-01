@@ -36,15 +36,36 @@
 **DIDNT WORK SYMBOLOGY WAS STILL LOST, ATTEMPTING TO NOT CLIP AND LEARN HOW TO BUFFER RASTER LAYER**
 
 3. Trying to convert Raster to Vector (to be able to buffer hydrology)
+
    3.1. This conversion did not work and I encountered problems when loading my files, I later realized my hydrology layer was already a vectorr
 
 4. Buffer Hydrology Vector Layer
+
    4.1. Create a 200m buffer zone around all hydrology areas in CyL
+
 ``` processing.run("native:buffer", {'INPUT':'C:/Users/localuser/Documents/GIS data/Cyl_masas_de_agua/hy.hidro_cyl_masas.shp','DISTANCE':200,'SEGMENTS':8,'END_CAP_STYLE':0,'JOIN_STYLE':0,'MITER_LIMIT':1,'DISSOLVE':False,'SEPARATE_DISJOINT':False,'OUTPUT':'C:/Users/localuser/Documents/GIS data/hydrology_CyL_200mBuffer.gpkg'})```
    
 5. Filter Vegetation that voles are attracted to
+
    5.1. This vegetation mapped and filtered is: Wheat, Barely, Maize, Rye, Oats, Other cereals, Green peas, Vetches, Alfalfa, Other legumes
    
+6. Attempting to create an overlap area of hydrology buffer and vegetation types - 
+
+   6.1 Need to make hydrology and vegetation layer the same type of data - making hydrology vector into raster
+
+``` processing.run("gdal:rasterize", {'INPUT':'C:/Users/localuser/Documents/GIS data/hydrology_CyL_200mBuffer.gpkg','FIELD':'','BURN':0,'USE_Z':False,'UNITS':0,'WIDTH':0,'HEIGHT':0,'EXTENT':None,'NODATA':0,'OPTIONS':'','DATA_TYPE':5,'INIT':None,'INVERT':False,'EXTRA':'','OUTPUT':'C:/Users/localuser/Documents/GIS data/attempt_hydrology_raster.tif'})```
+
+**DID NOT WORK, NOT SURE WHY, NOW TRYING AGAIN BUT ADDING PIXEL SIZE OF 10,-10**
+
+``` processing.run("gdal:rasterize", {'INPUT':'C:/Users/localuser/Documents/GIS data/hydrology_CyL_200mBuffer.gpkg','FIELD':'','BURN':0,'USE_Z':False,'UNITS':0,'WIDTH':10,'HEIGHT':0,'EXTENT':None,'NODATA':0,'OPTIONS':'','DATA_TYPE':5,'INIT':None,'INVERT':False,'EXTRA':'','OUTPUT':'C:/Users/localuser/Documents/GIS data/attempt_hydro_raster.tif'})```
+
+**DID NOT WORK, ATTEMPTING CONVERTING RASTER TO VECTOR**
+
+  6.2. Making Vegetation Raster into Vector to be able to execute an overlap area
+
+``` processing.run("gdal:polygonize", {'INPUT':'C:/Users/localuser/Documents/GIS data/2022_Clasificacion_MCSNCyL/2022-10-07-MCSNCyL2022.tif','BAND':1,'FIELD':'DN','EIGHT_CONNECTEDNESS':False,'EXTRA':'','OUTPUT':'C:/Users/localuser/Documents/GIS data/attempt_CyL_veg_vector.gpkg'})```
+
+**DID NOT WORK AND STATED "Process was unexpectedly terminated"
 
 
 
