@@ -65,7 +65,7 @@
 
 ``` processing.run("gdal:polygonize", {'INPUT':'C:/Users/localuser/Documents/GIS data/2022_Clasificacion_MCSNCyL/2022-10-07-MCSNCyL2022.tif','BAND':1,'FIELD':'DN','EIGHT_CONNECTEDNESS':False,'EXTRA':'','OUTPUT':'C:/Users/localuser/Documents/GIS data/attempt_CyL_veg_vector.gpkg'})```
 
-**DID NOT WORK AND STATED "Process was unexpectedly terminated"
+**DID NOT WORK AND STATED "Process was unexpectedly terminated"**
 
 
 
