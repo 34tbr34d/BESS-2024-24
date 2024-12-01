@@ -42,6 +42,7 @@
    4.1. Create a 200m buffer zone around all hydrology areas in CyL
 ``` processing.run("native:buffer", {'INPUT':'C:/Users/localuser/Documents/GIS data/Cyl_masas_de_agua/hy.hidro_cyl_masas.shp','DISTANCE':200,'SEGMENTS':8,'END_CAP_STYLE':0,'JOIN_STYLE':0,'MITER_LIMIT':1,'DISSOLVE':False,'SEPARATE_DISJOINT':False,'OUTPUT':'C:/Users/localuser/Documents/GIS data/hydrology_CyL_200mBuffer.gpkg'})```
    
+5. Reclassify Vegetation type raster to only vegetation voles are drawn to
 
 
 
