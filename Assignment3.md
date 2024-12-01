@@ -17,6 +17,11 @@
 #### jnj
 
 
+
+
+
+
+
 ## Steps Taken
 1. Clip Raster by Mask Layer Vegetation map to Segovia Provincia (so that vegetation and hydrology is more localized and visible)
 
@@ -28,7 +33,17 @@
 
 ``` processing.run("gdal:cliprasterbyextent", {'INPUT':'C:/Users/localuser/Documents/GIS data/2022_Clasificacion_MCSNCyL/2022-10-07-MCSNCyL2022.tif','PROJWIN':'343063.391700000,486801.225500000,4496909.935100000,4608067.193200000 [EPSG:25830]','OVERCRS':False,'NODATA':None,'OPTIONS':'','DATA_TYPE':0,'EXTRA':'','OUTPUT':'C:/Users/localuser/Documents/GIS data/attempt_not_delete_symbology_veg_sg.tif'})```
 
-**DIDNT WORK SYMBOLOGY WAS STILL LOST, ATTEMPTING TO**
+**DIDNT WORK SYMBOLOGY WAS STILL LOST, ATTEMPTING TO NOT CLIP AND LEARN HOW TO BUFFER RASTER LAYER**
+
+3. Trying to convert Raster to Vector (to be able to buffer hydrology)
+   3.1. This conversion did not work and I encountered problems when loading my files, I later realized my hydrology layer was already a vectorr
+
+4. Buffer Hydrology Vector Layer
+   4.1. Create a 200m buffer zone around all hydrology areas in CyL
+``` processing.run("native:buffer", {'INPUT':'C:/Users/localuser/Documents/GIS data/Cyl_masas_de_agua/hy.hidro_cyl_masas.shp','DISTANCE':200,'SEGMENTS':8,'END_CAP_STYLE':0,'JOIN_STYLE':0,'MITER_LIMIT':1,'DISSOLVE':False,'SEPARATE_DISJOINT':False,'OUTPUT':'C:/Users/localuser/Documents/GIS data/hydrology_CyL_200mBuffer.gpkg'})```
+   
+
+
 
 
 
