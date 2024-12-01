@@ -94,9 +94,9 @@ Goal is to intersect these layers, creating points on the map where the raster l
 
   5.2 Was hoping raster would be: 1= areas with both high erosion and crop land, 0 = other areas 
 
-DID NOT WORK - CREATED A FILE WITH NUMEROUS VALUES RANGING FROM 64 TO 2871? AREAS ARE SHADED AND NOT SPECIFICALLY OVERLAPPED?
+**DID NOT WORK - CREATED A FILE WITH NUMEROUS VALUES RANGING FROM 64 TO 2871? AREAS ARE SHADED AND NOT SPECIFICALLY OVERLAPPED?**
 
-ASSUMED ISSUE WAS BECAUSE DATA **WAS NOT CLASSIFIED INTO BINARY?**
+**ASSUMED ISSUE WAS BECAUSE DATA WAS NOT CLASSIFIED INTO BINARY?**
 
 6. Reclassify data using Table - Erosion Potential Raster
 
@@ -104,9 +104,9 @@ Using classes:
 1) 1 < x ≤ 5 → 0
 2) 6 < x ≤ 10 → 1
 
-''' processing.run("native:reclassifybytable", {'INPUT_RASTER':'C:/Users/localuser/Documents/GIS data/overlap_30T_EroPot_2.tif','RASTER_BAND':1,'TABLE':['1','5','0','6','10','1'],'NO_DATA':-9999,'RANGE_BOUNDARIES':0,'NODATA_FOR_MISSING':False,'DATA_TYPE':5,'OUTPUT':'C:/Users/localuser/Documents/GIS data/reclassified_EroPot.tif'}) '''
+``` processing.run("native:reclassifybytable", {'INPUT_RASTER':'C:/Users/localuser/Documents/GIS data/overlap_30T_EroPot_2.tif','RASTER_BAND':1,'TABLE':['1','5','0','6','10','1'],'NO_DATA':-9999,'RANGE_BOUNDARIES':0,'NODATA_FOR_MISSING':False,'DATA_TYPE':5,'OUTPUT':'C:/Users/localuser/Documents/GIS data/reclassified_EroPot.tif'}) ```
 
-**DID NOT WORK?? SAME ISSUE**, THIS RECLASSIFICATION CREATED THE SAME LAYER THE PREVIOUS STEP CREATED, ALONG WITH THE SAME BAND VALUES RANGING FROM 64 TO 2871?
+**DID NOT WORK?? SAME ISSUE, THIS RECLASSIFICATION CREATED THE SAME LAYER THE PREVIOUS STEP CREATED, ALONG WITH THE SAME BAND VALUES RANGING FROM 64 TO 2871?**
 
 
 
