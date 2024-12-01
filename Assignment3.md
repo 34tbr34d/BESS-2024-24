@@ -18,7 +18,9 @@
 
 
 ## Steps Taken
-1. 
+
+
+
 
 # **Second Spatial Analysis** - High Risk Areas in Terms of Economic and Envrionmental Losses
 **Objective:** Identify areas in Segovia, Spain that have a high risk in terms of vole populations, focusing towards agricultural zones that are vulnerable to economic loss and environemntal loss (both due to crop damage), and regions with high erosion potential where soil degredation can amplify environmental and economic impacts. 
