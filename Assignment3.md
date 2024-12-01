@@ -83,11 +83,31 @@ ERROR OCCURRING - 29T Land Cover data is displaced on map, doesnt align with the
 
 **MOVING FORWARD WITH ONLY 30T WHICH IS MAJORITY OF CYL, NEED ASSISTENCE TO FIND WHAT WENT WRONG AND THEN COMPLETE SAME UPCOMING STEPS WITH 29T**
 
-4. Re Filter Data - same as step 2.2, only keep value 5
-5. jsndjnsjdfn
+4. Refilter Data - same as step 2.2, only keep value 5
 
-6. Reclassify data using Table
+5. Raster => Raster Calculator 
+
+Goal is to intersect these layers, creating points on the map where the raster layers overlap 
+
+  5.1. Formula was erosion raster * land cover raster 
+          (1=high erosion, 0=no erosion), (1=crop land, 0=noncropland)
+
+  5.2 Was hoping raster would be: 1= areas with both high erosion and crop land, 0 = other areas 
+
+DID NOT WORK - CREATED A FILE WITH NUMEROUS VALUES RANGING FROM 64 TO 2871? AREAS ARE SHADED AND NOT SPECIFICALLY OVERLAPPED?
+
+ASSUMED ISSUE WAS BECAUSE DATA **WAS NOT CLASSIFIED INTO BINARY?**
+
+6. Reclassify data using Table - Erosion Potential Raster
 
 Using classes:
 1) 1 < x ≤ 5 → 0
 2) 6 < x ≤ 10 → 1
+
+''' processing.run("native:reclassifybytable", {'INPUT_RASTER':'C:/Users/localuser/Documents/GIS data/overlap_30T_EroPot_2.tif','RASTER_BAND':1,'TABLE':['1','5','0','6','10','1'],'NO_DATA':-9999,'RANGE_BOUNDARIES':0,'NODATA_FOR_MISSING':False,'DATA_TYPE':5,'OUTPUT':'C:/Users/localuser/Documents/GIS data/reclassified_EroPot.tif'}) '''
+
+**DID NOT WORK?? SAME ISSUE**, THIS RECLASSIFICATION CREATED THE SAME LAYER THE PREVIOUS STEP CREATED, ALONG WITH THE SAME BAND VALUES RANGING FROM 64 TO 2871?
+
+
+
+
