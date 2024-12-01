@@ -20,11 +20,15 @@
 ## Steps Taken
 1. Clip Raster by Mask Layer Vegetation map to Segovia Provincia (so that vegetation and hydrology is more localized and visible)
 
-```
- processing.run("gdal:cliprasterbymasklayer", {'INPUT':'C:/Users/localuser/Documents/GIS data/2022_Clasificacion_MCSNCyL/2022-10-07-MCSNCyL2022.tif','MASK':'C:/Users/localuser/Documents/GIS data/sg_province.gpkg|layername=prov_cyl_recintos','SOURCE_CRS':None,'TARGET_CRS':None,'TARGET_EXTENT':None,'NODATA':None,'ALPHA_BAND':False,'CROP_TO_CUTLINE':True,'KEEP_RESOLUTION':False,'SET_RESOLUTION':False,'X_RESOLUTION':None,'Y_RESOLUTION':None,'MULTITHREADING':False,'OPTIONS':'','DATA_TYPE':0,'EXTRA':'','OUTPUT':'C:/Users/localuser/Documents/GIS data/Vegetation_sg_province.tif'})```
+``` processing.run("gdal:cliprasterbymasklayer", {'INPUT':'C:/Users/localuser/Documents/GIS data/2022_Clasificacion_MCSNCyL/2022-10-07-MCSNCyL2022.tif','MASK':'C:/Users/localuser/Documents/GIS data/sg_province.gpkg|layername=prov_cyl_recintos','SOURCE_CRS':None,'TARGET_CRS':None,'TARGET_EXTENT':None,'NODATA':None,'ALPHA_BAND':False,'CROP_TO_CUTLINE':True,'KEEP_RESOLUTION':False,'SET_RESOLUTION':False,'X_RESOLUTION':None,'Y_RESOLUTION':None,'MULTITHREADING':False,'OPTIONS':'','DATA_TYPE':0,'EXTRA':'','OUTPUT':'C:/Users/localuser/Documents/GIS data/Vegetation_sg_province.tif'})```
 
 **DIDNT WORK BECAUSE SYMBOLOGY WAS LOST, INPUTS WERE NO LONGER CORRELATED WITH VEGETATION VALUES** 
 
+2. Trying to Clip Raster by Extent to perserve symbology
+
+``` processing.run("gdal:cliprasterbyextent", {'INPUT':'C:/Users/localuser/Documents/GIS data/2022_Clasificacion_MCSNCyL/2022-10-07-MCSNCyL2022.tif','PROJWIN':'343063.391700000,486801.225500000,4496909.935100000,4608067.193200000 [EPSG:25830]','OVERCRS':False,'NODATA':None,'OPTIONS':'','DATA_TYPE':0,'EXTRA':'','OUTPUT':'C:/Users/localuser/Documents/GIS data/attempt_not_delete_symbology_veg_sg.tif'})```
+
+**DIDNT WORK SYMBOLOGY WAS STILL LOST, ATTEMPTING TO**
 
 
 
