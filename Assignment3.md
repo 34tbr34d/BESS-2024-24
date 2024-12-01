@@ -45,5 +45,6 @@
 ##### - Mapped Land Use of 2023, corresponding values are: 1= Water, 2= Trees, 4= Flooded Vegetation, 5= Crops, 7= Built Area, 8=Bare ground, 9= Snow/Ice, 10= No land information due to cloud cover, 11= Rangeland 
 ##### - Source Data Coordinate System: Universal Transverse Mercator (UTM) WGS84
 ##### - Service Coordinate System: Web Mercator Auxiliary Sphere WGS84 (EPSG:3857)
+#### **Relevance**: Using this land cover data, filtering processes can be done to isolate crop land. This is relevant because where there 
 
 ## Steps Taken
