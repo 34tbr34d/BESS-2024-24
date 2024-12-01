@@ -29,6 +29,7 @@
   #### Descargas del Inventario Nacional de Erosion de Suelos (INES) en la Comunidad Autónoma de Castilla y León, Downloaded File Name: "Erosión potencial por niveles" (.tiff file) - https://www.miteco.gob.es/es/biodiversidad/temas/inventarios-nacionales/inventario-nacional-erosion-suelos/descarga_ines_castilla_leon.html 
 ##### - PDF with layer information found at - https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/servicios/banco-datos-naturaleza/1-ines/1memorias/libro_ines_40_segovia_tcm30-153960.pdf 
 ##### - Scale Resolution of 1:30,000
+##### - Data of Castilla y Leon
 ##### - Data posted by the Instituto Geológico y Minero de España (IGME), under the National Soil Erosion Inventory (INES)
 ##### - The methodology used to generate the erosion potential was based on scientific research and historical data
 ##### - Dataset last updated in 2014
@@ -47,6 +48,13 @@
 ##### - Service Coordinate System: Web Mercator Auxiliary Sphere WGS84 (EPSG:3857)
 #### **Relevance**: Using this land cover data, filtering processes can be done to isolate crop land. This is relevant because where there are agricultural fields and crops, voles are more likely to have impactful damage. In these areas, the vole damage would cause economic losses and have environmental consequences. 
 
-## Steps Taken
-1) Working on Erosion Potential Layer
-1.1) 
+## Steps TakenWorking on Erosion Potential Layer
+
+1. Working on Erosion Potential Layer
+   1.1. Input Erosion Potential of CyL into QGIS
+   1.2. Layer -> Properties -> Classify ->
+   1.3. Filter data: Deleted values 1,2,3,4 and 5 (only kept erosion potential values of high to very high (6,7,8,9,10))
+3. Working on Land Cover Layer
+   2.1. Clip Land Co
+   2.2.
+
