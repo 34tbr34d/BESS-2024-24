@@ -72,11 +72,22 @@
 3. Align Rasters using **Raster Projections- Warp (Reproject)**
 
 Erosion Potential is ESPG: 25830 while Land Cover (30T and 29T) are ESPG: 32630
+
 **Reprojecting Land Cover to be 25830**
 
 ''' processing.run("gdal:warpreproject", {'INPUT':'C:/Users/localuser/Documents/GIS data/30T_landcover_CyL.tif','SOURCE_CRS':QgsCoordinateReferenceSystem('EPSG:25830'),'TARGET_CRS':None,'RESAMPLING':0,'NODATA':None,'TARGET_RESOLUTION':None,'OPTIONS':'','DATA_TYPE':0,'TARGET_EXTENT':None,'TARGET_EXTENT_CRS':None,'MULTITHREADING':False,'EXTRA':'','OUTPUT':'C:/Users/localuser/Documents/GIS data/30T_landcover_ESPG25830.tif'}) '''
 
+''' processing.run("gdal:warpreproject", {'INPUT':'C:/Users/localuser/Documents/GIS data/29T_landcover_CyL.tif','SOURCE_CRS':QgsCoordinateReferenceSystem('EPSG:25830'),'TARGET_CRS':None,'RESAMPLING':0,'NODATA':None,'TARGET_RESOLUTION':None,'OPTIONS':'','DATA_TYPE':0,'TARGET_EXTENT':None,'TARGET_EXTENT_CRS':None,'MULTITHREADING':False,'EXTRA':'','OUTPUT':'C:/Users/localuser/Documents/GIS data/29T_landcover_ESPG_25830.tif'}) '''
 
+ERROR OCCURRING - 29T Land Cover data is displaced on map, doesnt align with the erosion potential coordinates and is no longer next to 30T
 
+**MOVING FORWARD WITH ONLY 30T WHICH IS MAJORITY OF CYL, NEED ASSISTENCE TO FIND WHAT WENT WRONG AND THEN COMPLETE SAME UPCOMING STEPS WITH 29T**
 
-   3.1. 
+4. Re Filter Data - same as step 2.2, only keep value 5
+5. jsndjnsjdfn
+
+6. Reclassify data using Table
+
+Using classes:
+1) 1 < x ≤ 5 → 0
+2) 6 < x ≤ 10 → 1
