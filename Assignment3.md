@@ -37,14 +37,13 @@
 
 
 ### Land Cover
-  #### Esri | Sentinel-2 Land Cover Explorer (.tif file) - https://livingatlas.arcgis.com/landcoverexplorer/#mapCenter=-5.12978%2C40.99605%2C5.9632000000000005&mode=step&timeExtent=2017%2C2021&renderingRule=0&year=2022
+  #### Esri Sentinel-2 Land Cover Explorer (.tif file, Raster data) - https://livingatlas.arcgis.com/landcoverexplorer/#mapCenter=-5.12978%2C40.99605%2C5.9632000000000005&mode=step&timeExtent=2017%2C2021&renderingRule=0&year=2022
 ##### - Dataset information foudn at https://www.arcgis.com/home/item.html?id=cfcb7609de5f478eb7666240902d4d3d 
 ##### - Dataset is available under a Creative Commons by Attribution license
 ##### - The data is the result of a collaboration between Esri and Impact Observatory
 ##### - Cell size is 10 meters
 ##### - Mapped Land Use of 2023, corresponding values are: 1= Water, 2= Trees, 4= Flooded Vegetation, 5= Crops, 7= Built Area, 8=Bare ground, 9= Snow/Ice, 10= No land information due to cloud cover, 11= Rangeland 
-#### - 
-
-
+##### - Source Data Coordinate System: Universal Transverse Mercator (UTM) WGS84
+##### - Service Coordinate System: Web Mercator Auxiliary Sphere WGS84 (EPSG:3857)
 
 ## Steps Taken
