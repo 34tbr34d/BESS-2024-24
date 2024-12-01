@@ -48,3 +48,5 @@
 #### **Relevance**: Using this land cover data, filtering processes can be done to isolate crop land. This is relevant because where there are agricultural fields and crops, voles are more likely to have impactful damage. In these areas, the vole damage would cause economic losses and have environmental consequences. 
 
 ## Steps Taken
+1) Working on Erosion Potential Layer
+1.1) 
