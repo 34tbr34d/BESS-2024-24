@@ -18,6 +18,12 @@
 
 
 ## Steps Taken
+1. Clip Raster by Mask Layer Vegetation map to Segovia Provincia (so that vegetation and hydrology is more localized and visible)
+
+```
+ processing.run("gdal:cliprasterbymasklayer", {'INPUT':'C:/Users/localuser/Documents/GIS data/2022_Clasificacion_MCSNCyL/2022-10-07-MCSNCyL2022.tif','MASK':'C:/Users/localuser/Documents/GIS data/sg_province.gpkg|layername=prov_cyl_recintos','SOURCE_CRS':None,'TARGET_CRS':None,'TARGET_EXTENT':None,'NODATA':None,'ALPHA_BAND':False,'CROP_TO_CUTLINE':True,'KEEP_RESOLUTION':False,'SET_RESOLUTION':False,'X_RESOLUTION':None,'Y_RESOLUTION':None,'MULTITHREADING':False,'OPTIONS':'','DATA_TYPE':0,'EXTRA':'','OUTPUT':'C:/Users/localuser/Documents/GIS data/Vegetation_sg_province.tif'})```
+
+**DIDNT WORK BECAUSE SYMBOLOGY WAS LOST, INPUTS WERE NO LONGER CORRELATED WITH VEGETATION VALUES** 
 
 
 
