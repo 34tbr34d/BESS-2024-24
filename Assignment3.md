@@ -29,7 +29,7 @@
 ##### - The methodology used to generate the erosion potential was based on scientific research and historical data
 ##### - Dataset last updated in 2014
 ##### - Data is Raster file, values represent different erosion potential levels: 0-1 = null or very low, 2-3 = low or moderate, 4-5 = medium, 6-7 = high, 8-9-10 = very high
-#### **Relevance**: This Erosion Potential layer 
+#### **Relevance**: This Erosion Potential layer is relevant and important because land erosion influences several environemntal factors such as plant growth, soil fertility and land productivity. Erosion weakens topsoil, which is where voles often feed and burrow. This behavior in voles would make areas with high erosion potential even more fragile and vulnerable. In turn, economic and environmental losses would be expected from this behavior. 
 
 
 ### Land Cover
