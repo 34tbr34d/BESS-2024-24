@@ -14,12 +14,12 @@
 
 
 ### Vegetation type
-#### jnj
-
-
-
-
-
+  ####  Castille and León crops and natural land map in 2022 (download .tif) - https://mcsncyl.itacyl.es/en/descarga 
+##### - Data is raster layer of different vegetation types in Castilla y Leon, attribute table states specifically the crop types presented
+##### - Scope of Castilla y Leon, data published by Junta de Castilla y Leon and Instituto Tecnologico Agario
+##### - Scale Resolution of 1:50,000
+##### - Created in 2022
+#### **Relevance**: This vegetation layer is relevant because through filtering, it is possible to only map the vegetation that the Common vole prefers, therefore locating where the species could be drawn to, enabling the mapping of ideal habitat areas. 
 
 
 ## Steps Taken
@@ -67,7 +67,13 @@
 
 **DID NOT WORK AND STATED "Process was unexpectedly terminated"**
 
+7. Created cartography map
 
+![Ideal Habitat for Common Vole based on Hydrology and Vegetation](Ideal Habitat for Common Vole in CyL.png )
+
+This map is focused on the areas where the Common vole has an ideal habitat to thrive in based on hydrology and vegetation within Castilla y Leon. Within this map, hydrology buffers were created to highlight a surrounding of 200 meters around water masses where the common vole would succeed. The vegetation represents the main crops the Common vole is drawn to, highlighting where the common vole would be likely found. 
+
+Ideally, I was attempting to create an overlapping layer where both vegetation and hydrology buffers stood. I also wanted this map to be focused only in Segovia so that the data would be clearly visualized. The viewer would idealy understand that these areas are likely infested with voles, and should be prioritized when implementing solutions. 
 
 
 # **Second Spatial Analysis** - High Risk Areas in Terms of Economic and Envrionmental Losses
@@ -158,8 +164,7 @@ Using classes:
 
 **DID NOT WORK?? SAME ISSUE, THIS RECLASSIFICATION CREATED THE SAME LAYER THE PREVIOUS STEP CREATED, ALONG WITH THE SAME BAND VALUES RANGING FROM 64 TO 2871?**
 
-
-
+Ideally, if this mapping worked out, I would create a map showing high risk areas in Castilla y Leon. This areas would be taking into account erosion potential and the agricultural land use. The intented message the viewer would recieve would be that these areas should be prioritized when looking at the Common vole infestation because of their negative economic and enviornmental impacts. There would be a key showing the erosion potential values and colors. There would be no key necessary for land use because the layer of land use was already narrowed to only crop land.
 
 
 
