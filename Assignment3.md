@@ -69,7 +69,7 @@
 
 7. Created cartography map
 
-![Ideal Habitat for Common Vole based on Hydrology and Vegetation](Ideal Habitat for Common Vole in CyL.png )
+![Ideal Habitat for Common Vole based on Hydrology and Vegetation](Ideal_Habitat_for_Common_Vole_in_CyL.png)
 
 This map is focused on the areas where the Common vole has an ideal habitat to thrive in based on hydrology and vegetation within Castilla y Leon. Within this map, hydrology buffers were created to highlight a surrounding of 200 meters around water masses where the common vole would succeed. The vegetation represents the main crops the Common vole is drawn to, highlighting where the common vole would be likely found. 
 
